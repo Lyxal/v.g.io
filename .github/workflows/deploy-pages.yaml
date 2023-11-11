@@ -48,7 +48,7 @@ jobs:
         run: ls; pwd
 
       - name: CD ..
-        run: cd ./v.g.io/dist; ls
+        run: cd ./v.g.io/dist;
 
       - name: Upload built HTML
         uses: actions/upload-pages-artifact@v1

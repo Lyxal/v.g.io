@@ -3,7 +3,6 @@ import type { GoldenLayout, ResolvedLayoutConfig } from "golden-layout";
 import { shallowRef, type ShallowRef } from "vue";
 import type { ComponentType } from "@/data/Layout";
 
-
 export const useMainStore = defineStore("main", {
   state() {
     return {
