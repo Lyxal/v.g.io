@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
@@ -37,23 +37,17 @@ jobs:
           node-version: 19
 
       - name: Install dependencies
-        run: npm --prefix ./v.g.io install
+        run: npm install
 
       - name: Build
-        run: npm --prefix ./v.g.io run build
+        run: npm run build
         env:
           NODE_ENV: "production"
-
-      - name: Check where we are
-        run: ls; pwd
-
-      - name: CD ..
-        run: cd ./v.g.io/dist;
 
       - name: Upload built HTML
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "."
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
