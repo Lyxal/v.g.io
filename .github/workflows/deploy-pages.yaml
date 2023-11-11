@@ -40,10 +40,10 @@ jobs:
           node-version: 19
 
       - name: Install dependencies
-        run: npm install
+        run: npm --prefix ./v.g.io install
 
       - name: Build
-        run: npm run build
+        run: npm --prefix ./v.g.io run build
         env:
           NODE_ENV: "production"
 
