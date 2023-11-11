@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [vue(), ViteYaml()],
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@": fileURLToPath(new URL("./v.g.io/src", import.meta.url)),
     },
   },
 });
