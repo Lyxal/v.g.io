@@ -37,10 +37,10 @@ jobs:
           node-version: 19
 
       - name: Install dependencies
-        run: npm --prefix ./v.g.io/v.g.io install
+        run: npm --prefix ./v.g.io install
 
       - name: Build
-        run: npm --prefix ./v.g.io/v.g.io run build
+        run: npm --prefix ./v.g.io run build
         env:
           NODE_ENV: "production"
 
