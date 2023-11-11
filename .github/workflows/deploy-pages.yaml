@@ -48,12 +48,12 @@ jobs:
         run: ls; pwd
 
       - name: CD ..
-        run: cd ./v.g.io; ls
+        run: cd ./v.g.io/dist; ls
 
       - name: Upload built HTML
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "dist"
+          path: "."
 
       - name: Deploy to GitHub Pages
         id: deployment
