@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Move into right folder
-        run: cd v.g.io; f=$(ls); echo $f
+        run: cd v.g.io; f=$(ls); echo $f; g=$(readlink -f .); echo $g
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
