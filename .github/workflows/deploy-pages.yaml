@@ -48,7 +48,7 @@ jobs:
         run: ls; pwd
 
       - name: CD ..
-        run: cd ..
+        run: cd ..; ls
 
       - name: Upload built HTML
         uses: actions/upload-pages-artifact@v1
