@@ -47,7 +47,7 @@ jobs:
       - name: Upload built HTML
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "./v.g.io/dist"
+          path: "./dist"
 
       - name: Deploy to GitHub Pages
         id: deployment
