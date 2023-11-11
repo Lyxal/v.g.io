@@ -28,9 +28,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Move into right folder
-        run: cd v.g.io; f=$(ls); echo $f; g=$(readlink -f .); echo $g
-
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
@@ -40,10 +37,10 @@ jobs:
           node-version: 19
 
       - name: Install dependencies
-        run: npm --prefix ./v.g.io install
+        run: npm --prefix ./v.g.io/v.g.io install
 
       - name: Build
-        run: npm --prefix ./v.g.io run build
+        run: npm --prefix ./v.g.io/v.g.io run build
         env:
           NODE_ENV: "production"
 
