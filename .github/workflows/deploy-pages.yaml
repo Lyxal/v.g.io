@@ -47,6 +47,9 @@ jobs:
       - name: Check where we are
         run: ls; pwd
 
+      - name: CD ..
+        run: cd ..
+
       - name: Upload built HTML
         uses: actions/upload-pages-artifact@v1
         with:
