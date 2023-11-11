@@ -31,6 +31,9 @@ jobs:
       - name: Move into right folder
         run: cd v.g.io
 
+      - name: See where we actions/configure-pages
+        run: f=$(ls); echo $f
+
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
